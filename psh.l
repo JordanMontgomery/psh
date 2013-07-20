@@ -5,7 +5,7 @@
  *	By Elijah Montgomery
  *
  *	Defines a lexer, compilable with GNU flex or AT&T lex which lexically analyzes
- *	text and returns tokens for The Verbose Shell
+ *	text and returns tokens for The Pipe Shell
  */
 
 #include <stdlib.h> 

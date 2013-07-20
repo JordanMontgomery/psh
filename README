@@ -6,14 +6,11 @@ The P shell
 This program implements a very simple UNIX shell in C using Flex and Bison. Originally, this was created for CS485G Systems Programming with Professor Griffioen at University of Kentucky. I have since modified it slightly and plan to do more work on it in the future. Also, I believe it serves as a good example of how one can implement a simple shell or other programs in C with Flex and Bison. 
 
 Included files are:
- - psh.y: Input parser implemented with GNU bison. Note that this also includes the functions
-          to execute the parsed input
+ - psh.y: Input parser implemented with GNU bison. Note that this also includes the functions to execute the parsed input
  - psh.l: Input lexical analyzer implemented with flex
- - psh.h: Pipe shell header file. Defines the node type used by the bison parser as well
-	  as a few other things needed by the shell
+ - psh.h: Pipe shell header file. Defines the node type used by the bison parser as well as a few other things needed by the shell
  - varlist.c: Symbol table implemented using a singly-linked list in C
- - varlist.h: Header file for symbol table. Defines node type used by symbol table and a few 
-	  other things needed by the symbol table.
+ - varlist.h: Header file for symbol table. Defines node type used by symbol table and a few other things needed by the symbol table.
  - Makefile: Makefile to build the entire project
  - README: information about the program
 
@@ -29,8 +26,7 @@ Features:
  - Checks errno's value after system calls to create more informative error messages
 
 Limitations:
- - Cannot currently execute builtin commands using a variable as the command name. For
-   example:
+ - Cannot currently execute builtin commands using a variable as the command name. For example:
 	setvar $mycmd echocmd
 	$mycmd on
    would attempt to execute echocmd as a system command
